@@ -2,7 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mainproject/ui/login/login_viewmodel.dart';
 import 'package:stacked/stacked.dart';
+import 'package:stacked_services/stacked_services.dart';
 
+import '../../app/app.router.dart';
 import '../../gen/assets.gen.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -123,7 +125,7 @@ class LoginScreen extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 100,right: 100),
                     child: ElevatedButton(
                       onPressed: () {
-                        viewModel.navigatetohomescreen();
+                        NavigationService().navigateTo(Routes.launchPage);
                       },
                       style: ButtonStyle(
                           backgroundColor: WidgetStatePropertyAll(

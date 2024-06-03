@@ -12,9 +12,21 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/delllaptop.png
+  AssetGenImage get delllaptop =>
+      const AssetGenImage('assets/images/delllaptop.png');
+
   /// File path: assets/images/facebook.png
   AssetGenImage get facebook =>
       const AssetGenImage('assets/images/facebook.png');
+
+  /// File path: assets/images/gigabytekeyboard.png
+  AssetGenImage get gigabytekeyboard =>
+      const AssetGenImage('assets/images/gigabytekeyboard.png');
+
+  /// File path: assets/images/gigabytesheadphone.png
+  AssetGenImage get gigabytesheadphone =>
+      const AssetGenImage('assets/images/gigabytesheadphone.png');
 
   /// File path: assets/images/google.png
   AssetGenImage get google => const AssetGenImage('assets/images/google.png');
@@ -23,12 +35,24 @@ class $AssetsImagesGen {
   AssetGenImage get headphone =>
       const AssetGenImage('assets/images/headphone.png');
 
-  /// File path: assets/images/appname.png
-  AssetGenImage get img => const AssetGenImage('assets/images/appname.png');
+  /// File path: assets/images/honormagicbook.png
+  AssetGenImage get honormagicbook =>
+      const AssetGenImage('assets/images/honormagicbook.png');
+
+  /// File path: assets/images/img.png
+  AssetGenImage get img => const AssetGenImage('assets/images/img.png');
+
+  /// File path: assets/images/iphonexs.png
+  AssetGenImage get iphonexs =>
+      const AssetGenImage('assets/images/iphonexs.png');
 
   /// File path: assets/images/keyboard.png
   AssetGenImage get keyboard =>
       const AssetGenImage('assets/images/keyboard.png');
+
+  /// File path: assets/images/kreobeluga.png
+  AssetGenImage get kreobeluga =>
+      const AssetGenImage('assets/images/kreobeluga.png');
 
   /// File path: assets/images/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
@@ -42,8 +66,20 @@ class $AssetsImagesGen {
   /// File path: assets/images/monitor.png
   AssetGenImage get monitor => const AssetGenImage('assets/images/monitor.png');
 
+  /// File path: assets/images/noisebud2.jpeg
+  AssetGenImage get noisebud2 =>
+      const AssetGenImage('assets/images/noisebud2.jpeg');
+
   /// File path: assets/images/oneplus.png
   AssetGenImage get oneplus => const AssetGenImage('assets/images/oneplus.png');
+
+  /// File path: assets/images/oneplusmouse.png
+  AssetGenImage get oneplusmouse =>
+      const AssetGenImage('assets/images/oneplusmouse.png');
+
+  /// File path: assets/images/redgearprowireless.png
+  AssetGenImage get redgearprowireless =>
+      const AssetGenImage('assets/images/redgearprowireless.png');
 
   /// File path: assets/images/second.png
   AssetGenImage get second => const AssetGenImage('assets/images/second.png');
@@ -65,16 +101,25 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
+        delllaptop,
         facebook,
+        gigabytekeyboard,
+        gigabytesheadphone,
         google,
         headphone,
+        honormagicbook,
         img,
+        iphonexs,
         keyboard,
+        kreobeluga,
         logo,
         mice,
         mobile,
         monitor,
+        noisebud2,
         oneplus,
+        oneplusmouse,
+        redgearprowireless,
         second,
         slider1,
         slider2,

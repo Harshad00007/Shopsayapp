@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mainproject/app/app.router.dart';
 import 'package:mainproject/ui/register/register_viewmodel.dart';
 import 'package:stacked/stacked.dart';
+import 'package:stacked_services/stacked_services.dart';
 
 import '../../gen/assets.gen.dart';
 
@@ -119,7 +121,7 @@ class RegisterScreen extends StatelessWidget {
                       padding: const EdgeInsets.only(left: 100, right: 100),
                       child: ElevatedButton(
                         onPressed: () {
-                          viewModel.navigatetohomescreen();
+                          NavigationService().navigateTo(Routes.launchPage);
                         },
                         style: ButtonStyle(
                             backgroundColor: WidgetStatePropertyAll(

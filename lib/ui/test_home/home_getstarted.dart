@@ -2,18 +2,17 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mainproject/ui/search_/search_screen.dart';
+import 'package:mainproject/ui/test_home/testhome_viewmodel.dart';
+import 'package:mainproject/ui/test_home/testhome_viewmodel.dart';
+import 'package:mainproject/ui/test_home/testhome_viewmodel.dart';
 import 'package:mainproject/ui/test_home/testhome_viewmodel.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:stacked/stacked.dart';
 
-class Homescreen extends StatefulWidget {
+class Homescreen extends StatelessWidget {
   const Homescreen({super.key});
 
-  @override
-  State<Homescreen> createState() => _HomescreenState();
-}
-
-class _HomescreenState extends State<Homescreen> {
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder.reactive(
@@ -134,7 +133,7 @@ class _HomescreenState extends State<Homescreen> {
                             size: 25,
                           ),
                           onTap: () {
-                            setState(() {});
+
                           },
                         ),
                       ),
@@ -409,6 +408,7 @@ class _HomescreenState extends State<Homescreen> {
                             padding: const EdgeInsets.all(11.0),
                             child: Image.asset("assets/images/mobile.png"),
                           ),
+
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 10),
@@ -435,6 +435,7 @@ class _HomescreenState extends State<Homescreen> {
                             padding: const EdgeInsets.all(11.0),
                             child: Image.asset("assets/images/keyboard.png"),
                           ),
+
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 10),
@@ -503,8 +504,7 @@ class _HomescreenState extends State<Homescreen> {
                   ],
                 ),
                 Padding(
-                  padding:
-                  const EdgeInsets.only(left: 2, right: 6, bottom: 10),
+                  padding: const EdgeInsets.only(left: 2, right: 6, bottom: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -553,47 +553,23 @@ class _HomescreenState extends State<Homescreen> {
                           ),
                           Text(
                             viewModel.price[index],
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontWeight: FontWeight.w600,
                                 fontSize: 12.16,
                                 color: Color(0xFF868686)),
                           ),
+
                         ],
                       ),
                     );
                   },
                 ),
-              ])),
-          bottomNavigationBar: BottomNavigationBar(items: [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home_outlined, color: Color(0xFF5F449F), ),
-              activeIcon: Icon(Icons.home,color: Colors.white,),
-              label: "Home",
-              backgroundColor:Color(0xFF513597),
-            ),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.search_off_outlined, color: Color(0xFF5F449F), ),
-                activeIcon: Icon(Icons.search,color: Colors.white,),
-              label: "Search",
-              backgroundColor:Color(0xFF513597),
-            ),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.favorite_border_outlined, color: Color(0xFF5F449F), ),
-                activeIcon: Icon(Icons.favorite,color: Colors.white,),
-              label: "Wishlist",
-              backgroundColor:Color(0xFF513597),
-            ),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.shopping_cart_outlined, color: Color(0xFF5F449F), ),
-                activeIcon: Icon(Icons.shopping_cart_rounded,color: Colors.white,),
-              label: "Cart",
-                backgroundColor: Color(0xFF513597),
-            ),
+              ]),
+          ),
 
-          ]),
         );
       },
-
     );
   }
 }
+
